@@ -48,7 +48,6 @@ You can generate `.aws/config` and `.aws/credentials` files manually
 [default]
 output = json
 region = us-west-2
-EOF
 ```
 
 #### Sample .aws/credentials
@@ -78,4 +77,4 @@ Default output format [None]: json
 Where:
 - `-v $PWD/.aws` mount local file system `.aws` directory (typically `$HOME/.aws`) in Read Write mode (implicit)
 - `-ti` terminal and interactive mode
-- `configure` aws clie configure command [Configuring the AWS CLI](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
+- `configure` aws cli configure command [Configuring the AWS CLI](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
