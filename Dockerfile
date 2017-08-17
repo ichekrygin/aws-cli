@@ -1,6 +1,6 @@
 FROM python:2.7-slim
 
-ENV VERSION=1.11.114
+ENV VERSION=1.11.136
 
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
