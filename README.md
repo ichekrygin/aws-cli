@@ -33,6 +33,11 @@ Describe VPCS in specific AWS region
 docker run --rm -v $HOME/.aws:/root/.aws:ro aws-cli ec2 describe-vpcs --region=us-east-1
 ```
 
+Docker login into ECR
+```
+eval $(docker run --rm -v $HOME/.aws:/root/.aws:ro illya/aws-cli ecr get-login --region us-west-2)
+```
+
 
 ## Configure AWS CLI Credentials
 
@@ -78,3 +83,4 @@ Where:
 - `-v $PWD/.aws` mount local file system `.aws` directory (typically `$HOME/.aws`) in Read Write mode (implicit)
 - `-ti` terminal and interactive mode
 - `configure` aws cli configure command [Configuring the AWS CLI](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
+
